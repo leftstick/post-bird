@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ececec;
+        }
+        
+        strong,
+        small {
+            display: block;
+            padding: 0;
+            margin: 7px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <br/>
+    <img src="../images/postbird.png" width="60" height="60">
+    <br/>
+    <strong>Postbird</strong>
+    <small id="version"></small>
+    <br/>
+    <small>2017-02-11 13:30</small>
+
+    <script>
+        const version = require('electron').remote.app.getVersion();
+        document.querySelector('#version').innerHTML = 'Version ' + version;
+    </script>
+</body>
+
+</html>
