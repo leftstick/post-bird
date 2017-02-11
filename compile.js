@@ -14,7 +14,7 @@ platforms.forEach(function(platform) {
         arch: 'x64',
         icon: icons[platform],
         out: './dist',
-        asar: false,
+        asar: true,
         appVersion: require('./package.json').version,
         ignore: /^\/(dist|render|\.[\w\.]+|LICENSE|README\.md|compile\.js|\w+\.config\.\w*|node_modules)/
     }, function(err, appPaths) {
