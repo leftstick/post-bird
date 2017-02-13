@@ -16,7 +16,7 @@ platforms.forEach(function(platform) {
         out: './dist',
         asar: true,
         appVersion: require('./package.json').version,
-        ignore: /^\/(dist|render|\.[\w\.]+|LICENSE|README\.md|compile\.js|\w+\.config\.\w*|node_modules)/
+        ignore: /^\/(dist|docs|render|node_modules|\.[\w\.]+|compile\.js|LICENSE|README\.md|\w+\.config\.\w*)/
     }, function(err, appPaths) {
         if (err) {
             console.error(err);
