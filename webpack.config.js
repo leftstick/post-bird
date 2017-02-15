@@ -23,7 +23,7 @@ module.exports = {
                     loader: 'vue-loader',
                     options: {
                         loaders: {
-                            js: 'babel-loader?{"presets":["es2015"],"plugins": ["transform-object-rest-spread", ["component", [{"libraryName": "element-ui","styleLibraryName":"theme-default"}]]]}',
+                            js: 'babel-loader?{"presets":[["es2015", {"modules": false}]],"plugins": ["transform-object-rest-spread", ["component", [{"libraryName": "element-ui","styleLibraryName":"theme-default"}]]]}',
                             css: 'vue-style-loader!css-loader!postcss-loader'
                         }
                     }
